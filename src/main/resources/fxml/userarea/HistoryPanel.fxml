@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.unipv.controller.userarea.HistoryPanelController">
+   <children>
+      <BorderPane layoutX="73.0" layoutY="46.0" prefHeight="522.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="73.0" prefWidth="798.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="searchBarTextfield" layoutX="25.0" layoutY="28.0" prefHeight="25.0" prefWidth="382.0" promptText="Cerca..." AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="27.0" />
+                  <Label fx:id="searchButton" alignment="CENTER" layoutX="416.0" layoutY="28.0" onMouseClicked="#searchButtonListener" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #db8f00; -fx-background-radius: 3;" stylesheets="@../../css/BebasNeue.css" text="Cerca" textFill="WHITE" AnchorPane.leftAnchor="425.0" AnchorPane.topAnchor="27.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="449.0" prefWidth="27.0" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <ScrollPane fx:id="historyPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background: black; -fx-border-color: black; -fx-outline: none; -fx-background-color: transparent;" stylesheets="@../../css/ScrollBarStyle.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

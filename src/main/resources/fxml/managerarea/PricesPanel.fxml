@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="629.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.unipv.controller.managerarea.PricesPanelController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="214.0" prefWidth="353.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="tariffaBaseLabel" layoutX="31.0" layoutY="36.0" prefHeight="26.0" prefWidth="87.0" stylesheets="@../../css/BebasNeue.css" text="Tariffa base" textFill="WHITE" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="373.0">
+                     <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sovrapprezzoVIPLabel" layoutX="31.0" layoutY="75.0" prefHeight="21.0" prefWidth="124.0" stylesheets="@../../css/BebasNeue.css" text="Sovrapprezzo VIP" textFill="WHITE" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="336.0">
+                     <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sovrapprezzoTreDLabel" layoutX="31.0" layoutY="115.0" prefHeight="21.0" prefWidth="127.0" stylesheets="@../../css/BebasNeue.css" text="Sovrapprezzo 3D" textFill="WHITE" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="333.0">
+                     <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="riduzioneLabel" layoutX="31.0" layoutY="151.0" prefHeight="21.0" prefWidth="79.0" stylesheets="@../../css/BebasNeue.css" text="Riduzione" textFill="WHITE" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="381.0">
+                     <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="baseTextField" layoutX="168.0" layoutY="34.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.rightAnchor="36.0" />
+                  <TextField fx:id="vipTextField" layoutX="168.0" layoutY="73.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.rightAnchor="36.0" />
+                  <TextField fx:id="threeDTextField" layoutX="168.0" layoutY="113.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.rightAnchor="36.0" />
+                  <TextField fx:id="reducedTextField" layoutX="168.0" layoutY="149.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.rightAnchor="36.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="53.0" prefWidth="629.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="saveButton" alignment="CENTER" layoutX="518.0" layoutY="16.0" onMouseClicked="#doSave" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #db8f00; -fx-background-radius: 10; -fx-cursor: hand;" stylesheets="@../../css/BebasNeue.css" text="Salva" textFill="WHITE" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="326.0" prefWidth="78.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="323.0" prefWidth="60.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

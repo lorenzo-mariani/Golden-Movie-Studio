@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.unipv.controller.userarea.TipsPanelController">
+   <children>
+      <BorderPane layoutX="73.0" layoutY="46.0" prefHeight="522.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="798.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="121.0" layoutY="7.0" prefHeight="29.0" prefWidth="798.0" stylesheets="@../../css/BebasNeue.css" text="Ecco una lista di film che potrebbero interessarti!" textFill="#db8f00" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Bebas Neue Regular" size="26.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </top>
+         <center>
+            <ScrollPane fx:id="tipsPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background: black; -fx-border-color: black; -fx-outline: none; -fx-background-color: transparent;" stylesheets="@../../css/ScrollBarStyle.css" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <AnchorPane prefHeight="449.0" prefWidth="27.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

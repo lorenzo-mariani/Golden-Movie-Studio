@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="682.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.unipv.controller.userarea.AreaRiservataHomeController">
+   <children>
+      <BorderPane prefHeight="694.0" prefWidth="1057.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="142.0" prefWidth="1030.0" style="-fx-background-color: #db8f00;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="123.0" fitWidth="163.0" layoutX="30.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Cinema Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="592.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="homeLabel" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#filterByOptions" prefHeight="80.0" prefWidth="203.0" style="-fx-cursor: hand;" stylesheets="@../../css/BebasNeue.css" text="HOME">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="prenotationsLabel" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#filterByOptions" prefHeight="80.0" prefWidth="203.0" style="-fx-cursor: hand;" stylesheets="@../../css/BebasNeue.css" text="PRENOTAZIONI">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="seenMoviesLabel" alignment="CENTER" onMouseClicked="#filterByOptions" prefHeight="80.0" prefWidth="203.0" style="-fx-cursor: hand;" stylesheets="@../../css/BebasNeue.css" text="FILM VISTI">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tipsLabel" alignment="CENTER" onMouseClicked="#filterByOptions" prefHeight="80.0" prefWidth="203.0" style="-fx-cursor: hand;" stylesheets="@../../css/BebasNeue.css" text="SUGGERIMENTI">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="exitLabel" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#filterByOptions" prefHeight="80.0" prefWidth="203.0" style="-fx-cursor: hand;" stylesheets="@../../css/BebasNeue.css" text="ESCI">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <BorderPane fx:id="mainPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <AnchorPane layoutY="856.0" prefHeight="30.0" prefWidth="1181.0" style="-fx-background-color: #606060; -fx-border-color: #d3d3d3; -fx-border-width: 1px 0px 0px 0px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ProgressBar fx:id="statusPBar" layoutX="1087.0" layoutY="6.0" prefHeight="18.0" prefWidth="80.0" progress="0.0" AnchorPane.rightAnchor="14.0" />
+            <Label fx:id="statusLabel" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="587.0" layoutY="6.0" prefHeight="17.0" prefWidth="468.0" text="test" textFill="WHITE" AnchorPane.rightAnchor="102.0" />
+            <Label fx:id="animatedTipsLabel" layoutX="9.0" layoutY="7.0" prefHeight="17.0" prefWidth="603.0" text="Benvenuto in Golden Movie Studio!" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

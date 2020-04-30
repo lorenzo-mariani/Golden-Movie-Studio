@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.unipv.controller.managerarea.MovieSchedulerController">
+   <children>
+      <BorderPane layoutX="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="64.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="nuovaProgrammazioneButton" alignment="CENTER" layoutX="387.0" layoutY="14.0" onMouseClicked="#nuovaProgrammazioneButtonListener" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: #db8f00; -fx-background-radius: 10;" stylesheets="@../../css/BebasNeue.css" text="Nuova Programmazione" textFill="WHITE" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <ScrollPane fx:id="schedulerPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background: black; -fx-border-color: black; -fx-outline: none; -fx-background-color: transparent;" stylesheets="@../../css/ScrollBarStyle.css" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <AnchorPane prefHeight="336.0" prefWidth="36.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="332.0" prefWidth="702.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.unipv.controller.userarea.HomePanelController">
+   <children>
+      <BorderPane prefHeight="268.0" prefWidth="661.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="96.0" layoutY="75.0" prefHeight="39.0" prefWidth="80.0" stylesheets="@../../css/BebasNeue.css" text="Username:" textFill="#db8f00">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="usernameInjectedLabel" layoutX="244.0" layoutY="75.0" prefHeight="39.0" prefWidth="444.0" textFill="WHITE">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="96.0" layoutY="145.0" prefHeight="39.0" prefWidth="80.0" stylesheets="@../../css/BebasNeue.css" text="E-Mail:" textFill="#db8f00">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="emailInjectedLabel" layoutX="245.0" layoutY="145.0" prefHeight="39.0" prefWidth="443.0" textFill="WHITE">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="96.0" layoutY="217.0" prefHeight="39.0" prefWidth="108.0" stylesheets="@../../css/BebasNeue.css" text="Codice Utente:" textFill="#db8f00">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="codeInjectedLabel" layoutX="245.0" layoutY="217.0" prefHeight="39.0" prefWidth="443.0" textFill="WHITE">
+                           <font>
+                              <Font name="Bebas Neue Regular" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

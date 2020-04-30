@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.unipv.controller.managerarea.MovieListPanelController">
+   <children>
+      <BorderPane layoutX="188.0" layoutY="82.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="80.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="searchBarTextfield" layoutX="32.0" layoutY="29.0" prefHeight="25.0" prefWidth="382.0" promptText="Cerca..." AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="29.0" />
+                  <Label fx:id="searchButton" alignment="CENTER" layoutX="432.0" layoutY="29.0" onMouseClicked="#searchButtonListener" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #db8f00; -fx-background-radius: 3;" stylesheets="@../../css/BebasNeue.css" text="Cerca" textFill="WHITE" AnchorPane.leftAnchor="422.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="314.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <AnchorPane prefHeight="28.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <ScrollPane fx:id="movieListPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background: black; -fx-border-color: black; -fx-outline: none; -fx-background-color: transparent;" stylesheets="@../../css/ScrollBarStyle.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
